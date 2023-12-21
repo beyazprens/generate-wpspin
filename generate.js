@@ -20,3 +20,9 @@ function wpspin(MAC) {
 
 	return wpspin;
 }
+
+function calculateWpsPin() {
+	let MAC = document.getElementById('MAC').value;
+	let result = wpspin(MAC);
+	document.getElementById('result').textContent = result;
+}
