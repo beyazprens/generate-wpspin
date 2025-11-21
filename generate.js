@@ -15,7 +15,6 @@ function wpspin(MAC) {
 
 	let wpspin = pin * 10 + chksum;
 
-	// Düzenleme bölümü: sondaki sıfırı kaldır
 	wpspin = parseInt(wpspin.toString().slice(0, -1));
 
 	return wpspin;
